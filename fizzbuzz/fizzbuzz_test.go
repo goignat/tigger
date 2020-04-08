@@ -13,4 +13,11 @@ func TestFizzBuzz(t *testing.T) {
 			t.Fatalf("want 1, got %q", got)
 		}
 	})
+
+	t.Run("2 given, '1' returned", func(t *testing.T) {
+		got := fizzbuzz.FizzBuzz(2)
+		if "2" != got {
+			t.Fatalf("want 2, got %q", got)
+		}
+	})
 }
