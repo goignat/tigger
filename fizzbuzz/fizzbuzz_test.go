@@ -16,6 +16,7 @@ func TestFizzBuzz(t *testing.T) {
 		{name: "2 given, '2' returned", want: "2", n: 2},
 		{name: "3 given, 'Fizz' returned", want: "Fizz", n: 3},
 		{name: "4 given, '4' returned", want: "4", n: 4},
+		{name: "5 given, 'Buzz' returned", want: "Buzz", n: 5},
 	}
 
 	for _, tst := range tests {
