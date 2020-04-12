@@ -5,5 +5,8 @@ func FizzBuzz(n int) string {
 		return "1"
 	}
 
+	if n%3 == 0 {
+		return "Fizz"
+	}
 	return "2"
 }
