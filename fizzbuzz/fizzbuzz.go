@@ -3,14 +3,14 @@ package fizzbuzz
 import "fmt"
 
 func FizzBuzz(n int) string {
-	if n%15 == 0 {
+	switch {
+	case n%15 == 0:
 		return "FizzBuzz"
-	}
-	if n%3 == 0 {
+	case n%3 == 0:
 		return "Fizz"
-	}
-	if n%5 == 0 {
+	case n%5 == 0:
 		return "Buzz"
+	default:
+		return fmt.Sprintf("%d", n)
 	}
-	return fmt.Sprintf("%d", n)
 }
