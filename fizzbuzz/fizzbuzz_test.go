@@ -15,9 +15,11 @@ func TestFizzBuzz(t *testing.T) {
 		{name: "1 given, '1' returned", want: "1", n: 1},
 		{name: "2 given, '2' returned", want: "2", n: 2},
 		{name: "3 given, 'Fizz' returned", want: "Fizz", n: 3},
+		{name: "4 given, '4' returned", want: "4", n: 4},
 	}
 
 	for _, tst := range tests {
+		tst := tst
 		t.Run(tst.name, func(t *testing.T) {
 			t.Parallel()
 
