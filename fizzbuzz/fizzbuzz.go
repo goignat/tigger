@@ -14,3 +14,9 @@ func FizzBuzz(n int) string {
 		return fmt.Sprintf("%d", n)
 	}
 }
+
+func DisplayResult() {
+	for n := 1; n <= 100; n++ {
+		fmt.Println(FizzBuzz(n))
+	}
+}
